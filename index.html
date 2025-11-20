@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adega Royal - Cardápio</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Ícones Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <!-- Estilo próprio -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- HEADER (Banner + Logo) -->
+    <header class="header-area">
+        <img src="img/banner.jpg" class="header-banner">
+        <img src="img/royal_logo_natal.jpg" class="header-logo">
+    </header>
+
+    <!-- NOME DO RESTAURANTE -->
+   <div class="container mt-4">
+    <h2 class="fw-bold titulo-cardapio">ADEGA ROYAL</h2>
+</div>
+
+    <!-- MENU SUPERIOR SCROLL -->
+    <div class="menu-scroll">
+        <button class="menu-btn" data-target="feijoada"><i class="bi bi-egg-fried"></i> Feijoada</button>
+        <button class="menu-btn" data-target="carnes"><i class="bi bi-fire"></i> Carnes</button>
+        <button class="menu-btn" data-target="entradas"><i class="bi bi-emoji-smile"></i> Entradas</button>
+        <button class="menu-btn" data-target="kids"><i class="bi bi-emoji-laughing"></i> Kids</button>
+        <button class="menu-btn" data-target="saladas"><i class="bi bi-emoji-wink"></i> Saladas</button>
+    </div>
+
+    <!-- CONTEÚDO DO CARDÁPIO -->
+    <div class="cardapio-wrapper mt-4">
+        <div class="accordion" id="cardapio">
+
+            <!-- ========================
+                 FEIJOADA
+            ========================= -->
+            <div class="accordion-item" id="feijoada">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseFeijoada">
+                        <i class="bi bi-egg-fried me-2"></i> Feijoada
+                    </button>
+                </h2>
+
+                <div id="collapseFeijoada" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+
+                        <!-- 1 prato -->
+                        <div class="item d-flex">
+                            <img src="img/pratos/feijoada800.jpg" class="item-img">
+                            <div class="ms-3">
+                                <h5>Feijoada 800ml (2 Pessoas)</h5>
+                                <p>Feijoada tradicional com carnes selecionadas...</p>
+                                <strong>R$ 139,90</strong>
+                            </div>
+                        </div>
+
+                        <div class="item d-flex mt-3">
+                            <img src="img/pratos/feijoada1200.jpg" class="item-img">
+                            <div class="ms-3">
+                                <h5>Feijoada 1200ml (3 Pessoas)</h5>
+                                <p>Feijoada tradicional com carnes selecionadas...</p>
+                                <strong>R$ 189,90</strong>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- ========================
+                 CARNES
+            ========================= -->
+            <div class="accordion-item" id="carnes">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseCarnes">
+                        <i class="bi bi-fire me-2"></i> Ponto das Carnes
+                    </button>
+                </h2>
+
+                <div id="collapseCarnes" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+
+                        <div class="item d-flex">
+                            <img src="img/pratos/picanha.jpg" class="item-img">
+                            <div class="ms-3">
+                                <h5>Picanha na Brasa</h5>
+                                <p>Corte nobre grelhado na brasa. Acompanha vinagrete e pão de alho.</p>
+                                <strong>R$ 89,90</strong>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- ========================
+                 ENTRADAS
+            ========================= -->
+            <div class="accordion-item" id="entradas">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseEntradas">
+                        <i class="bi bi-emoji-smile me-2"></i> Entradas
+                    </button>
+                </h2>
+
+                <div id="collapseEntradas" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+
+                        <div class="item d-flex">
+                            <img src="img/pratos/fritas.jpg" class="item-img">
+                            <div class="ms-3">
+                                <h5>Batata Frita com Cheddar</h5>
+                                <p>Porção de fritas cobertas com cheddar cremoso e bacon crocante.</p>
+                                <strong>R$ 35,00</strong>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
