@@ -79,3 +79,47 @@
     margin-left: -113px;
     margin-top: 70px;
 }
+
+/* ====== TELA DE CELULAR ====== */
+/* ====== TELA DE CELULAR ====== */
+@media (max-width: 768px) {
+
+    /* Banner */
+    .header-area {
+        height: 140px; 
+    }
+
+    .header-banner {
+        height: 140px;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    /* Logo */
+    .header-logo {
+        width: 80px;
+        height: 80px;
+        bottom: -35px;
+        right: 10px;
+        border-width: 3px;
+    }
+
+    /* TÍTULO AJUSTADO */
+    .titulo-cardapio {
+        margin-top: 55px !important;
+        margin-left: 0 !important;
+        font-size: 26px;
+        text-align: left;
+    }
+
+    /* Menu superior */
+    .menu-scroll {
+        margin-top: 10px;
+    }
+
+    /* Espaçamento geral */
+    .cardapio-wrapper {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
