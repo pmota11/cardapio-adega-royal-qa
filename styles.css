@@ -4,7 +4,7 @@
 .header-area {
     position: relative;
     width: 100%;
-    height: 200px; /* tamanho ideal desktop */
+    height: 150px; /* tamanho ideal desktop */
     overflow: visible;
 }
 
