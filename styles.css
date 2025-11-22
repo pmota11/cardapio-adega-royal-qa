@@ -92,7 +92,7 @@
     margin-left: 0;
     text-align: left;
     font-size: 32px;
-    padding-left: -50px;  /* deixa alinhamento bonito sem colar na borda */
+    padding-left: 20px;  /* deixa alinhamento bonito sem colar na borda */
 }
 
 /* =======================
