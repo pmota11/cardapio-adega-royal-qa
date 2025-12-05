@@ -1,142 +1,805 @@
 <!DOCTYPE html>
-<!-- TESTE 999 -->
-
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adega Royal - Cardápio</title>
 
-    <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Ícones Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 
-    <!-- Estilo próprio -->
-    <link rel="stylesheet" href="styles.css?v=3">
-
-    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-
+    <link rel="stylesheet" href="styles.css?v=4">
 </head>
 <body>
 
-    <!-- HEADER (Banner + Logo) -->
-    <header class="header-area">
-        <img src="img/banner.jpg" class="header-banner">
-        <img src="img/royal_logo_natal.jpg" class="header-logo">
-    </header>
+<header class="header-area">
+    <img src="img/banner.jpg" class="header-banner">
+    <img src="img/royal_logo_natal.jpg" class="header-logo">
+</header>
 
-    <!-- NOME DO RESTAURANTE -->
-    <h2 class="fw-bold titulo-cardapio">ROYAL SOCIAL CLUB</h2>
+<h2 class="fw-bold titulo-cardapio">ROYAL SOCIAL CLUB</h2>
+
+<!-- MENU SUPERIOR -->
+<div class="menu-scroll">
+    <button class="menu-btn" data-target="porcoes"><i class="bi bi-basket"></i> Porções</button>
+    <button class="menu-btn" data-target="pratos"><i class="bi bi-egg-fried"></i> Pratos</button>
+    <!--<button class="menu-btn" data-target="adicionais"><i class="bi bi-plus-circle"></i> Adicionais</button>-->
+    <button class="menu-btn" data-target="lanches"><i class="bi bi-hamburger"></i> Lanches</button>
+    <button class="menu-btn" data-target="sobremesa"><i class="bi bi-ice-cream"></i> Sobremesas</button>
+    <button class="menu-btn" data-target="doses"><i class="bi bi-cup-straw"></i> Doses</button>
+    <button class="menu-btn" data-target="combos"><i class="bi bi-lightning-charge"></i> Combos</button>
+    <button class="menu-btn" data-target="diversos"><i class="bi bi-emoji-smile"></i> Diversos</button>
+</div>
 
 
-    <!-- MENU SUPERIOR SCROLL -->
-    <div class="menu-scroll">
-        <button class="menu-btn" data-target="feijoada"><i class="bi bi-egg-fried"></i> Feijoada</button>
-        <button class="menu-btn" data-target="carnes"><i class="bi bi-fire"></i> Carnes</button>
-        <button class="menu-btn" data-target="entradas"><i class="bi bi-emoji-smile"></i> Entradas</button>
-        <button class="menu-btn" data-target="kids"><i class="bi bi-emoji-laughing"></i> Kids</button>
-        <button class="menu-btn" data-target="saladas"><i class="bi bi-emoji-wink"></i> Saladas</button>
-    </div>
+<!-- CARDÁPIO COMPLETO -->
+<div class="cardapio-wrapper mt-4">
+    <div class="accordion" id="cardapio">
 
-    <!-- CONTEÚDO DO CARDÁPIO -->
-    <div class="cardapio-wrapper mt-4">
-        <div class="accordion" id="cardapio">
+        <!-- ======================================================
+                           PORÇÕES
+        ====================================================== -->
+        <div class="accordion-item" id="porcoes">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapsePorcoes">
+                    <i class="bi bi-basket me-2"></i> Porções
+                </button>
+            </h2>
 
-            <!-- ========================
-                 FEIJOADA
-            ========================= -->
-            <div class="accordion-item" id="feijoada">
-                <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseFeijoada">
-                        <i class="bi bi-egg-fried me-2"></i> Feijoada
-                    </button>
-                </h2>
+            <div id="collapsePorcoes" class="accordion-collapse collapse">
+                <div class="accordion-body">
 
-                <div id="collapseFeijoada" class="accordion-collapse collapse">
-                    <div class="accordion-body">
-
-                        <!-- 1 prato -->
-                        <div class="item d-flex">
-                            <img src="img/pratos/feijoada800.jpg" class="item-img">
-                            <div class="ms-3">
-                                <h5>Feijoada 800ml (2 Pessoas)</h5>
-                                <p>Feijoada tradicional com carnes selecionadas...</p>
-                                <strong>R$ 139,90</strong>
-                            </div>
+                    <!-- 1 -->
+                    <div class="item d-flex">
+                        <img src="img/porcoes/batatafrita.jpg" class="item-img">
+                        <div class="ms-3">
+                            <h5>Batata Frita</h5>
+                            <strong>R$ 35,00</strong>
                         </div>
-
-                        <div class="item d-flex mt-3">
-                            <img src="img/pratos/feijoada1200.jpg" class="item-img">
-                            <div class="ms-3">
-                                <h5>Feijoada 1200ml (3 Pessoas)</h5>
-                                <p>Feijoada tradicional com carnes selecionadas...</p>
-                                <strong>R$ 189,90</strong>
-                            </div>
-                        </div>
-
                     </div>
+
+                    <!-- 2 -->
+                    <div class="item d-flex mt-3">
+                        <img src="img/porcoes/batatacheddar.jpg" class="item-img">
+                        <div class="ms-3">
+                            <h5>Batata com Cheddar e Bacon</h5>
+                            <strong>R$ 60,00</strong>
+                        </div>
+                    </div>
+
+                    <!-- 3 -->
+                    <div class="item d-flex mt-3">
+                        <img src="img/porcoes/calabresa.jpg" class="item-img">
+                        <div class="ms-3">
+                            <h5>Calabresa com Batata</h5>
+                            <strong>R$ 65,00</strong>
+                        </div>
+                    </div>
+
+                    <!-- 4 -->
+                    <div class="item d-flex mt-3">
+                        <img src="img/porcoes/pastelcarnequeijo.jpg" class="item-img">
+                        <div class="ms-3">
+                            <h5>Pastel de Carne e Queijo</h5>
+                            <strong>R$ 50,00</strong>
+                        </div>
+                    </div>
+
+                    <!-- 5 -->
+                    <div class="item d-flex mt-3">
+                        <img src="img/porcoes/pastelsalmao.jpg" class="item-img">
+                        <div class="ms-3">
+                            <h5>Pastel de Salmão</h5>
+                            <strong>R$ 70,00</strong>
+                        </div>
+                    </div>
+
+                    <!-- 6 -->
+                    <div class="item d-flex mt-3">
+                        <img src="img/porcoes/iscafrango.jpg" class="item-img">
+                        <div class="ms-3">
+                            <h5>Isca de Frango</h5>
+                            <strong>R$ 50,00</strong>
+                        </div>
+                    </div>
+
+                    <!-- 7 -->
+                    <div class="item d-flex mt-3">
+                        <img src="img/porcoes/iscasempanado.jpg" class="item-img">
+                        <div class="ms-3">
+                            <h5>Iscas de Frango Empanado</h5>
+                            <strong>R$ 60,00</strong>
+                        </div>
+                    </div>
+
+                    <!-- 8 -->
+                    <div class="item d-flex mt-3">
+                        <img src="img/porcoes/bolinhocostela.jpg" class="item-img">
+                        <div class="ms-3">
+                            <h5>Bolinho de Costela</h5>
+                            <strong>R$ 60,00</strong>
+                        </div>
+                    </div>
+
+                    <!-- 9 -->
+                    <div class="item d-flex mt-3">
+                        <img src="img/porcoes/picanha-meia.jpg" class="item-img">
+                        <div class="ms-3">
+                            <h5>Picanha com Batata 1/2</h5>
+                            <strong>R$ 130,00</strong>
+                        </div>
+                    </div>
+
+                    <!-- 10 -->
+                    <div class="item d-flex mt-3">
+                        <img src="img/porcoes/picanha.jpg" class="item-img">
+                        <div class="ms-3">
+                            <h5>Picanha com Batata</h5>
+                            <strong>R$ 230,00</strong>
+                        </div>
+                    </div>
+
+                    <!-- 11 -->
+                    <div class="item d-flex mt-3">
+                        <img src="img/porcoes/tabuafrios.jpg" class="item-img">
+                        <div class="ms-3">
+                            <h5>Tábua de Frios</h5>
+                            <strong>R$ 50,00</strong>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- ======================================================
+                           PRATOS
+        ====================================================== -->
+        <div class="accordion-item" id="pratos">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapsePratos">
+                    <i class="bi bi-egg-fried me-2"></i> Pratos
+                </button>
+            </h2>
+
+            <div id="collapsePratos" class="accordion-collapse collapse">
+                <div class="accordion-body">
+
+                    <div class="item d-flex">
+                        <img src="img/pratos/parmegiana-carne.jpg" class="item-img">
+                        <div class="ms-3">
+                            <h5>Parmegiana Carne</h5>
+                            <strong>R$ 65,00</strong>
+                        </div>
+                    </div>
+
+                    <div class="item d-flex mt-3">
+                        <img src="img/pratos/parmegiana-frango.jpg" class="item-img">
+                        <div class="ms-3">
+                            <h5>Parmegiana Frango</h5>
+                            <strong>R$ 50,00</strong>
+                        </div>
+                    </div>
+
+                    <div class="item d-flex mt-3">
+                        <img src="img/pratos/strogonoff-carne.jpg" class="item-img">
+                        <div class="ms-3">
+                            <h5>Strogonoff de Carne</h5>
+                            <strong>R$ 60,00</strong>
+                        </div>
+                    </div>
+
+                    <div class="item d-flex mt-3">
+                        <img src="img/pratos/strogonoff-frango.jpg" class="item-img">
+                        <div class="ms-3">
+                            <h5>Strogonoff de Frango</h5>
+                            <strong>R$ 50,00</strong>
+                        </div>
+                    </div>
+
+                    <div class="item d-flex mt-3">
+                        <img src="img/pratos/filemignon.jpg" class="item-img">
+                        <div class="ms-3">
+                            <h5>Filé Mignon</h5>
+                            <strong>R$ 90,00</strong>
+                        </div>
+                    </div>
+
+                    <div class="item d-flex mt-3">
+                        <img src="img/pratos/filefrango.jpg" class="item-img">
+                        <div class="ms-3">
+                            <h5>Filé de Frango</h5>
+                            <strong>R$ 50,00</strong>
+                        </div>
+                    </div>
+
+                    <div class="item d-flex mt-3">
+                        <img src="img/pratos/frango-milanesa.jpg" class="item-img">
+                        <div class="ms-3">
+                            <h5>Filé de Frango à Milanesa</h5>
+                            <strong>R$ 55,00</strong>
+                        </div>
+                    </div>
+
+                    <div class="item d-flex mt-3">
+                        <img src="img/pratos/contrafile.jpg" class="item-img">
+                        <div class="ms-3">
+                            <h5>Contrafilé</h5>
+                            <strong>R$ 50,00</strong>
+                        </div>
+                    </div>
+
+                    <div class="item d-flex mt-3">
+                        <img src="img/pratos/omelete.jpg" class="item-img">
+                        <div class="ms-3">
+                            <h5>Omelete</h5>
+                            <strong>R$ 45,00</strong>
+                        </div>
+                    </div>
+
+                    <div class="item d-flex mt-3">
+                        <img src="img/pratos/salmao.jpg" class="item-img">
+                        <div class="ms-3">
+                            <h5>Salmão</h5>
+                            <strong>R$ 70,00</strong>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- ======================================================
+                           ADICIONAIS
+        ====================================================== -->
+       <!-- ===================== ADICIONAIS ===================== -->
+<div class="accordion-item" id="adicionais">
+    <h2 class="accordion-header">
+        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseAdicionais">
+            <i class="bi bi-plus-circle me-2"></i> Adicionais
+        </button>
+    </h2>
+
+    <div id="collapseAdicionais" class="accordion-collapse collapse">
+        <div class="accordion-body">
+
+            <div class="item d-flex">
+                <img src="img/adicionais/batata.jpg" class="item-img">
+                <div class="ms-3">
+                    <h5>Batata Frita</h5>
+                    <strong>R$ 7,00</strong>
                 </div>
             </div>
 
-            <!-- ========================
-                 CARNES
-            ========================= -->
-            <div class="accordion-item" id="carnes">
-                <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseCarnes">
-                        <i class="bi bi-fire me-2"></i> Ponto das Carnes
-                    </button>
-                </h2>
-
-                <div id="collapseCarnes" class="accordion-collapse collapse">
-                    <div class="accordion-body">
-
-                        <div class="item d-flex">
-                            <img src="img/pratos/picanha.jpg" class="item-img">
-                            <div class="ms-3">
-                                <h5>Picanha na Brasa</h5>
-                                <p>Corte nobre grelhado na brasa. Acompanha vinagrete e pão de alho.</p>
-                                <strong>R$ 89,90</strong>
-                            </div>
-                        </div>
-
-                    </div>
+            <div class="item d-flex mt-3">
+                <img src="img/adicionais/pure.jpg" class="item-img">
+                <div class="ms-3">
+                    <h5>Purê de Batata</h5>
+                    <strong>R$ 7,00</strong>
                 </div>
             </div>
 
-            <!-- ========================
-                 ENTRADAS
-            ========================= -->
-            <div class="accordion-item" id="entradas">
-                <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseEntradas">
-                        <i class="bi bi-emoji-smile me-2"></i> Entradas
-                    </button>
-                </h2>
+            <div class="item d-flex mt-3">
+                <img src="img/adicionais/birobiro.jpg" class="item-img">
+                <div class="ms-3">
+                    <h5>Arroz Biro Biro</h5>
+                    <strong>R$ 15,00</strong>
+                </div>
+            </div>
 
-                <div id="collapseEntradas" class="accordion-collapse collapse">
-                    <div class="accordion-body">
+            <div class="item d-flex mt-3">
+                <img src="img/adicionais/brocolis.jpg" class="item-img">
+                <div class="ms-3">
+                    <h5>Arroz com Brócolis</h5>
+                    <strong>R$ 15,00</strong>
+                </div>
+            </div>
 
-                        <div class="item d-flex">
-                            <img src="img/pratos/fritas.jpg" class="item-img">
-                            <div class="ms-3">
-                                <h5>Batata Frita com Cheddar</h5>
-                                <p>Porção de fritas cobertas com cheddar cremoso e bacon crocante.</p>
-                                <strong>R$ 35,00</strong>
-                            </div>
-                        </div>
+            <div class="item d-flex mt-3">
+                <img src="img/adicionais/vinagrete.jpg" class="item-img">
+                <div class="ms-3">
+                    <h5>Vinagrete</h5>
+                    <strong>R$ 7,00</strong>
+                </div>
+            </div>
 
-                    </div>
+            <div class="item d-flex mt-3">
+                <img src="img/adicionais/caesar.jpg" class="item-img">
+                <div class="ms-3">
+                    <h5>Salada Caesar</h5>
+                    <strong>R$ 35,00</strong>
                 </div>
             </div>
 
         </div>
-
     </div>
+</div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="script.js"></script>
+
+            </div>
+
+            
+        </div>
+
+
+        
+
+        <!-- ======================================================
+                              LANCHES
+        ====================================================== -->
+        <div class="accordion-item" id="lanches">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseLanches">
+                    <i class="bi bi-hamburger me-2"></i> Lanches
+                </button>
+            </h2>
+
+            <div id="collapseLanches" class="accordion-collapse collapse">
+                <div class="accordion-body">
+
+                    <div class="item d-flex">
+                        <img src="img/lanches/xburguer.jpg" class="item-img">
+                        <div class="ms-3">
+                            <h5>X-Burguer</h5>
+                            <strong>R$ 50,00</strong>
+                        </div>
+                    </div>
+
+                    <div class="item d-flex mt-3">
+                        <img src="img/lanches/xbacon.jpg" class="item-img">
+                        <div class="ms-3">
+                            <h5>X-Bacon</h5>
+                            <strong>R$ 55,00</strong>
+                        </div>
+                    </div>
+
+                    <div class="item d-flex mt-3">
+                        <img src="img/lanches/xduplo.jpg" class="item-img">
+                        <div class="ms-3">
+                            <h5>X-Duplo Royal</h5>
+                            <strong>R$ 68,00</strong>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <!-- ======================================================
+                           SOBREMESAS
+        ====================================================== -->
+        <div class="accordion-item" id="sobremesa">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseSobremesa">
+                    <i class="bi bi-ice-cream me-2"></i> Sobremesas
+                </button>
+            </h2>
+
+            <div id="collapseSobremesa" class="accordion-collapse collapse">
+                <div class="accordion-body">
+
+                    <div class="item d-flex">
+                        <img src="img/sobremesas/acai.jpg" class="item-img">
+                        <div class="ms-3">
+                            <h5>Taça Açaí</h5>
+                            <strong>R$ 28,00</strong>
+                        </div>
+                    </div>
+
+                    <div class="item d-flex mt-3">
+                        <img src="img/sobremesas/petit.jpg" class="item-img">
+                        <div class="ms-3">
+                            <h5>Petit Gateau</h5>
+                            <strong>R$ 45,00</strong>
+                        </div>
+                    </div>
+
+                    <div class="item d-flex mt-3">
+                        <img src="img/sobremesas/sorvete.jpg" class="item-img">
+                        <div class="ms-3">
+                            <h5>Taça Sorvete</h5>
+                            <strong>R$ 20,00</strong>
+                        </div>
+                    </div>
+
+                    <div class="item d-flex mt-3">
+                        <img src="img/sobremesas/kinder.jpg" class="item-img">
+                        <div class="ms-3">
+                            <h5>Taça Royal Kinder</h5>
+                            <strong>R$ 50,00</strong>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <!-- ======================================================
+                           DOSES
+        ====================================================== -->
+        <div class="accordion-item" id="doses">
+    <h2 class="accordion-header">
+        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseDoses">
+            <i class="bi bi-cup-straw me-2"></i> Doses
+        </button>
+    </h2>
+
+    <div id="collapseDoses" class="accordion-collapse collapse">
+        <div class="accordion-body">
+
+            <h5 class="fw-bold mb-2">Whisky</h5>
+
+            <div class="item d-flex">
+                <img src="img/doses/ballantines.jpg" class="item-img">
+                <div class="ms-3">
+                    <h5>Ballantine’s</h5>
+                    <strong>R$ 40,00</strong>
+                </div>
+            </div>
+
+            <div class="item d-flex mt-3">
+                <img src="img/doses/blacklabel.jpg" class="item-img">
+                <div class="ms-3">
+                    <h5>Black Label</h5>
+                    <strong>R$ 65,00</strong>
+                </div>
+            </div>
+
+            <div class="item d-flex mt-3">
+                <img src="img/doses/goldlabel.jpg" class="item-img">
+                <div class="ms-3">
+                    <h5>Gold Label</h5>
+                    <strong>R$ 85,00</strong>
+                </div>
+            </div>
+
+            <div class="item d-flex mt-3">
+                <img src="img/doses/buchanans.jpg" class="item-img">
+                <div class="ms-3">
+                    <h5>Buchanan’s</h5>
+                    <strong>R$ 65,00</strong>
+                </div>
+            </div>
+
+            <div class="item d-flex mt-3 mb-3">
+                <img src="img/doses/royalsalute.jpg" class="item-img">
+                <div class="ms-3">
+                    <h5>Royal Salute</h5>
+                    <strong>R$ 150,00</strong>
+                </div>
+            </div>
+
+            <hr>
+
+            <h5 class="fw-bold mb-2">Vodka</h5>
+
+            <div class="item d-flex">
+                <img src="img/doses/absolut.jpg" class="item-img">
+                <div class="ms-3">
+                    <h5>Absolut</h5>
+                    <strong>R$ 35,00</strong>
+                </div>
+            </div>
+
+            <div class="item d-flex mt-3 mb-3">
+                <img src="img/doses/ciroc.jpg" class="item-img">
+                <div class="ms-3">
+                    <h5>Ciroc Red</h5>
+                    <strong>R$ 70,00</strong>
+                </div>
+            </div>
+
+            <hr>
+
+            <h5 class="fw-bold mb-2">Gin</h5>
+
+            <div class="item d-flex">
+                <img src="img/doses/beefeater.jpg" class="item-img">
+                <div class="ms-3">
+                    <h5>Beefeater</h5>
+                    <strong>R$ 50,00</strong>
+                </div>
+            </div>
+
+            <div class="item d-flex mt-3">
+                <img src="img/doses/beefeaterpink.jpg" class="item-img">
+                <div class="ms-3">
+                    <h5>Beefeater Pink</h5>
+                    <strong>R$ 65,00</strong>
+                </div>
+            </div>
+
+            <div class="item d-flex mt-3">
+                <img src="img/doses/bombay.jpg" class="item-img">
+                <div class="ms-3">
+                    <h5>Bombay Sapphire</h5>
+                    <strong>R$ 50,00</strong>
+                </div>
+            </div>
+
+            <div class="item d-flex mt-3">
+                <img src="img/doses/tanqueray.jpg" class="item-img">
+                <div class="ms-3">
+                    <h5>Tanqueray</h5>
+                    <strong>R$ 50,00</strong>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+        <!-- ===================== COMBOS ===================== -->
+<div class="accordion-item" id="combos">
+    <h2 class="accordion-header">
+        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseCombos">
+            <i class="bi bi-lightning-charge me-2"></i> Combos
+        </button>
+    </h2>
+    
+    <div id="collapseCombos" class="accordion-collapse collapse">
+        <div class="accordion-body">
+
+            <!-- ALERTA -->
+            <div class="alert alert-warning fw-bold mb-4"
+                 style="background:linear-gradient(90deg,#fff3cd,#ffe8a1);border-left:6px solid #d4a017;">
+                🎁 Na compra de um combo <span style="color:#b8860b;">Blue Label</span> ou 
+                <span style="color:#b8860b;">Royal Salute</span>, você ganha <strong>OPEN ROSH!</strong>
+            </div>
+
+            <!-- GIN -->
+            <h5 class="fw-bold">Gin</h5>
+
+            <div class="item d-flex mt-3">
+                <img src="img/combos/beefeater.jpg" class="item-img">
+                <div class="ms-3">
+                    <h5>Beefeater</h5>
+                    <strong>R$ 450,00</strong>
+                </div>
+            </div>
+
+            <div class="item d-flex mt-3">
+                <img src="img/combos/bombay.jpg" class="item-img">
+                <div class="ms-3">
+                    <h5>Bombay</h5>
+                    <strong>R$ 400,00</strong>
+                </div>
+            </div>
+
+            <div class="item d-flex mt-3">
+                <img src="img/combos/tanqueray.jpg" class="item-img">
+                <div class="ms-3">
+                    <h5>Tanqueray</h5>
+                    <strong>R$ 450,00</strong>
+                </div>
+            </div>
+
+            <div class="item d-flex mt-3 mb-3">
+                <img src="img/combos/beefeaterpink.jpg" class="item-img">
+                <div class="ms-3">
+                    <h5>Beefeater Pink</h5>
+                    <strong>R$ 475,00</strong>
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- VODKA -->
+            <h5 class="fw-bold">Vodka</h5>
+
+            <div class="item d-flex mt-3">
+                <img src="img/combos/absolut.jpg" class="item-img">
+                <div class="ms-3">
+                    <h5>Absolut</h5>
+                    <strong>R$ 350,00</strong>
+                </div>
+            </div>
+
+            <div class="item d-flex mt-3">
+                <img src="img/combos/ciroc.jpg" class="item-img">
+                <div class="ms-3">
+                    <h5>Ciroc</h5>
+                    <strong>R$ 450,00</strong>
+                </div>
+            </div>
+
+            <div class="item d-flex mt-3">
+                <img src="img/combos/greygoose.jpg" class="item-img">
+                <div class="ms-3">
+                    <h5>Grey Goose</h5>
+                    <strong>R$ 450,00</strong>
+                </div>
+            </div>
+
+            <div class="item d-flex mt-3">
+                <img src="img/combos/greygoosesabor.jpg" class="item-img">
+                <div class="ms-3">
+                    <h5>Grey Goose (Sabor)</h5>
+                    <strong>R$ 450,00</strong>
+                </div>
+            </div>
+
+            <div class="item d-flex mt-3 mb-3">
+                <img src="img/combos/belvedere.jpg" class="item-img">
+                <div class="ms-3">
+                    <h5>Belvedere</h5>
+                    <strong>R$ 450,00</strong>
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- WHISKY -->
+            <h5 class="fw-bold">Whisky</h5>
+
+            <div class="item d-flex mt-3">
+                <img src="img/combos/ballantines.jpg" class="item-img">
+                <div class="ms-3">
+                    <h5>Ballantine's</h5>
+                    <strong>R$ 300,00</strong>
+                </div>
+            </div>
+
+            <div class="item d-flex mt-3">
+                <img src="img/combos/chivas.jpg" class="item-img">
+                <div class="ms-3">
+                    <h5>Chivas</h5>
+                    <strong>R$ 380,00</strong>
+                </div>
+            </div>
+
+            <div class="item d-flex mt-3">
+                <img src="img/combos/buchanans.jpg" class="item-img">
+                <div class="ms-3">
+                    <h5>Buchanan's Deluxe</h5>
+                    <strong>R$ 480,00</strong>
+                </div>
+            </div>
+
+            <div class="item d-flex mt-3">
+                <img src="img/combos/blacklabel.jpg" class="item-img">
+                <div class="ms-3">
+                    <h5>Black Label</h5>
+                    <strong>R$ 450,00</strong>
+                </div>
+            </div>
+
+            <div class="item d-flex mt-3">
+                <img src="img/combos/goldlabel.jpg" class="item-img">
+                <div class="ms-3">
+                    <h5>Gold Label</h5>
+                    <strong>R$ 600,00</strong>
+                </div>
+            </div>
+
+            <div class="item d-flex mt-3">
+                <img src="img/combos/bluelabel.jpg" class="item-img">
+                <div class="ms-3">
+                    <h5>Blue Label</h5>
+                    <strong>R$ 2.000,00</strong>
+                </div>
+            </div>
+
+            <div class="item d-flex mt-3 mb-3">
+                <img src="img/combos/royalsalute.jpg" class="item-img">
+                <div class="ms-3">
+                    <h5>Royal Salute</h5>
+                    <strong>R$ 1.700,00</strong>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+        <!-- ======================================================
+                       DIVERSOS
+====================================================== -->
+<div class="accordion-item" id="diversos">
+    <h2 class="accordion-header">
+        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseDiversos">
+            <i class="bi bi-emoji-smile me-2"></i> Diversos
+        </button>
+    </h2>
+
+    <div id="collapseDiversos" class="accordion-collapse collapse">
+        <div class="accordion-body">
+
+            <div class="item d-flex">
+                <img src="img/diversos/agua.jpg" class="item-img">
+                <div class="ms-3">
+                    <h5>Água</h5>
+                    <strong>R$ 6,00</strong>
+                </div>
+            </div>
+
+            <div class="item d-flex mt-3">
+                <img src="img/diversos/aguacoco.jpg" class="item-img">
+                <div class="ms-3">
+                    <h5>Água de Coco</h5>
+                    <strong>R$ 25,00</strong>
+                </div>
+            </div>
+
+            <div class="item d-flex mt-3">
+                <img src="img/diversos/refrigerante.jpg" class="item-img">
+                <div class="ms-3">
+                    <h5>Refrigerante Lata</h5>
+                    <strong>R$ 8,00</strong>
+                </div>
+            </div>
+
+            <div class="item d-flex mt-3">
+                <img src="img/diversos/redbull.jpg" class="item-img">
+                <div class="ms-3">
+                    <h5>Red Bull</h5>
+                    <strong>R$ 15,00</strong>
+                </div>
+            </div>
+
+            <div class="item d-flex mt-3">
+                <img src="img/diversos/h2o.jpg" class="item-img">
+                <div class="ms-3">
+                    <h5>H2O</h5>
+                    <strong>R$ 10,00</strong>
+                </div>
+            </div>
+
+            <div class="item d-flex mt-3">
+                <img src="img/diversos/skolbeats.jpg" class="item-img">
+                <div class="ms-3">
+                    <h5>Skol Beats</h5>
+                    <strong>R$ 12,00</strong>
+                </div>
+            </div>
+
+            <div class="item d-flex mt-3">
+                <img src="img/diversos/heineken.jpg" class="item-img">
+                <div class="ms-3">
+                    <h5>Heineken Long Neck</h5>
+                    <strong>R$ 15,00</strong>
+                </div>
+            </div>
+
+            <div class="item d-flex mt-3">
+                <img src="img/diversos/budweiser.jpg" class="item-img">
+                <div class="ms-3">
+                    <h5>Budweiser Long Neck</h5>
+                    <strong>R$ 15,00</strong>
+                </div>
+            </div>
+
+            <div class="item d-flex mt-3">
+                <img src="img/diversos/corona.jpg" class="item-img">
+                <div class="ms-3">
+                    <h5>Corona Long Neck</h5>
+                    <strong>R$ 15,00</strong>
+                </div>
+            </div>
+
+            <div class="item d-flex mt-3">
+                <img src="img/diversos/smirnoff.jpg" class="item-img">
+                <div class="ms-3">
+                    <h5>Smirnoff Ice Long Neck</h5>
+                    <strong>R$ 15,00</strong>
+                </div>
+            </div>
+
+            <div class="item d-flex mt-3 mb-3">
+                <img src="img/diversos/gelosaborizado.jpg" class="item-img">
+                <div class="ms-3">
+                    <h5>Gelo Saborizado</h5>
+                    <strong>R$ 6,00</strong>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+
 </body>
 </html>
