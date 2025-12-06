@@ -1,4 +1,40 @@
 /* =======================
+   CORES FUNDO
+========================== */
+
+body {
+    background-color: #1a1a1af3 !important;
+    color: #d4af37 !important;
+}
+
+/* Accordion fechado */
+.accordion-button {
+    background-color: #2b2b2b !important;
+    color: #d4af37 !important;
+    border-bottom: 1px solid #444 !important;
+}
+
+/* Accordion aberto */
+.accordion-button:not(.collapsed) {
+    background-color: #3a3a3a !important;
+    color: #d4af37 !important;
+}
+
+/* Área interna */
+.accordion-body {
+    background-color: #2b2b2b !important;
+    color: #d4af37 !important;
+}
+
+/* Item do accordion */
+.accordion-item {
+    background-color: #2b2b2b !important;
+    border: 1px solid #444 !important;
+}
+
+
+
+/* =======================
    HEADER
 ========================== */
 .header-area {
@@ -27,6 +63,10 @@
     box-shadow: 0px 2px 8px rgba(0,0,0,0.3);
 }
 
+header,
+.header-area {
+    background-color: #1a1a1af3 !important;
+}
 /* =======================
    MENU SCROLL
 ========================== */
@@ -35,8 +75,22 @@
     overflow-x: auto;
     gap: 10px;
     padding: 10px;
-    background: white;
-    border-bottom: 1px solid #ddd;
+    background: #1a1a1af3 !important;
+    border-bottom: 1px solid #333 !important;
+}
+
+.menu-btn {
+    padding: 8px 16px;
+    border-radius: 10px;
+    border: 1px solid #444 !important;
+    background: #1a1a1af3 !important;
+    color: #d4af37 !important;
+    white-space: nowrap;
+    font-size: 15px;
+}
+
+.menu-btn:hover {
+    background: #3a3a3a !important;
 }
 
 .menu-scroll::-webkit-scrollbar {
@@ -47,14 +101,6 @@
     border-radius: 20px;
 }
 
-.menu-btn {
-    padding: 8px 16px;
-    border-radius: 10px;
-    border: 1px solid #ccc;
-    background: #fff;
-    white-space: nowrap;
-    font-size: 15px;
-}
 
 /* =======================
    CARDÁPIO
