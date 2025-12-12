@@ -3,33 +3,33 @@
 ========================== */
 
 body {
-    background-color: #030000 !important;
-    color: #0088ff !important;
+    background-color: #ffffff !important;
+    color: #053055 !important;
     text-shadow: 0 0 2px #d4eaf1;
 }
 
 /* Accordion fechado */
 .accordion-button {
-    background-color: #030000 !important;
-    color: #0088ff !important;
+    background-color: #ffffff !important;
+    color: #053055 !important;
     border-bottom: 1px solid #302b2b !important;
 }
 
 /* Accordion aberto */
 .accordion-button:not(.collapsed) {
-    background-color: #030000 !important;
-    color: #0088ff !important;
+    background-color: #ffffff !important;
+    color: #053055 !important;
 }
 
 /* Área interna */
 .accordion-body {
-    background-color: #030000 !important;
-    color: #0088ff !important;
+    background-color: #ffffff !important;
+    color: #053055 !important;
 }
 
 /* Item do accordion */
 .accordion-item {
-    background-color: #030000 !important;
+    background-color: #ffffff !important;
     border: 1px solid #403b3b !important;
 }
 
@@ -68,7 +68,7 @@ b, strong {
 
 header,
 .header-area {
-    background-color: #030000 !important;
+    background-color: #ffffff !important;
 }
 /* =======================
    MENU SCROLL
@@ -78,22 +78,22 @@ header,
     overflow-x: auto;
     gap: 10px;
     padding: 10px;
-    background: #000000f3 !important;
-    border-bottom: 1px solid #000000 !important;
+    background: #ffffff !important;
+    border-bottom: 1px solid #ffffff !important;
 }
 
 .menu-btn {
     padding: 8px 16px;
     border-radius: 10px;
     border: 1px solid #333232 !important;
-    background: #0d0d0df3 !important;
-    color: #0088ff !important;
+    background: #ffffff !important;
+    color: #053055 !important;
     white-space: nowrap;
     font-size: 15px;
 }
 
 .menu-btn:hover {
-    background: #3a3a3a !important;
+    background: #ffffff !important;
 }
 
 .menu-scroll::-webkit-scrollbar {
